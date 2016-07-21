@@ -1,16 +1,21 @@
 {
   "name": "Random Bookmark",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "manifest_version": 2,
   "description": "Chrome extension to open random bookmark from specific folder",
   "homepage_url": "https://github.com/dmytroyarmak/random-bookmark-chrome-extension",
   "browser_action": {
     "default_title": "Open random bookmark"
   },
+  "options_ui": {
+    "page": "options.html",
+    "chrome_style": true
+  },
   "background": {
     "scripts": ["background.js"]
   },
   "permissions": [
-    "bookmarks"
+    "bookmarks",
+    "storage"
   ]
 }
